@@ -11,8 +11,8 @@ export default function App() {
     const [rollsNum, setRollsNum] = React.useState(0)
     const [counter, setCounter] = React.useState(0)
     const [start, setStart] = React.useState(false)
-    const [results, setResults] = React.useState( [] || JSON.parse(localStorage.getItem("results")))
-    const [bestResult, setBestResult] = React.useState([] || JSON.parse(localStorage.getItem("best")))
+    const [results, setResults] = React.useState(() => [] || JSON.parse(localStorage.getItem("results")))
+    const [bestResult, setBestResult] = React.useState(()=>[] || JSON.parse(localStorage.getItem("best")))
   
     console.log(bestResult)
     React.useEffect(()=> {
