@@ -20,6 +20,7 @@ main {
     background-color: #F5F5F5;
     height: fit-content;
     max-width: 800px;
+    min-width: 350px;
     border-radius: 5px;
     padding: 20px;
     display: flex;
