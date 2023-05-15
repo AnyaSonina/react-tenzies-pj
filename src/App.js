@@ -14,7 +14,7 @@ export default function App() {
     const [results, setResults] = React.useState(() => [] || JSON.parse(localStorage.getItem("results")))
     const [bestResult, setBestResult] = React.useState(()=>[] || JSON.parse(localStorage.getItem("best")))
   
-    console.log(bestResult)
+    
     React.useEffect(()=> {
        localStorage.setItem("results", JSON.stringify(results))           
     }, [results])
